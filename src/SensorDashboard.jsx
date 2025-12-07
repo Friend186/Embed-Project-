@@ -8,7 +8,7 @@ const calculateLuxFromPercent = (raw) => {
   const R_FIXED = 10000; 
   const rLdr = (VIN * R_FIXED / vOut) - R_FIXED;
   const lux = 500 / (rLdr / 1000); 
-  return Math.round(lux);
+  return Math.round(lux );
 };
 
 const getSensorState = (type, value) => {
